@@ -1,12 +1,6 @@
 <template>
     <div class="inputBox shadow">
-        <input
-            type="text"
-            v-model="newTodoItem"
-            placeholder="Type your Todo!"
-            v-on:keyup.enter="addTodo"
-            class="form"
-        />
+        <input type="text" v-model="newTodoItem" placeholder="Type your Todo!" v-on:keyup.enter="addTodo" class="form" />
         <span class="addContainer" v-on:click="addTodo">
             <font-awesome-icon class="addBtn" icon="plus" aria-hidden="true"></font-awesome-icon>
         </span>

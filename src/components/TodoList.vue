@@ -3,11 +3,7 @@
         <section>
             <transition-group name="list" tag="ul">
                 <li v-for="(todoItem, index) in propsdata" :key="todoItem" class="shadow">
-                    <font-awesome-icon
-                        class="checkBtn"
-                        icon="check"
-                        aria-hidden="true"
-                    ></font-awesome-icon>
+                    <font-awesome-icon class="checkBtn" icon="check" aria-hidden="true"></font-awesome-icon>
                     {{ todoItem }}
                     <span class="removeBtn" type="button" v-on:click="removeTodo(todoItem, index)">
                         <font-awesome-icon icon="trash" aria-hidden="true"></font-awesome-icon>
